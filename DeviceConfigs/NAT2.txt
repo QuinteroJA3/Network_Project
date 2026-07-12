@@ -1,0 +1,18 @@
+Device Name: NAT2
+Device Type: GNS3 NAT Node
+Interface: nat0
+Mode: Network Address Translation
+
+Purpose:
+The NAT2 node connects the private virtual network to external networks.
+It translates private IP addresses used by the virtual machines into an
+address that can communicate through the host computer's network
+connection.
+
+Services Provided:
+- Default gateway access
+- Internet connectivity
+- Network Address Translation
+- Support for outbound DNS and HTTP traffic
+
+The NAT node is connected to Switch1 through its nat0 interface.
