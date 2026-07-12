@@ -1,0 +1,38 @@
+Device Name: Ubuntu_Server-1
+Operating System: Ubuntu Linux
+Virtualization Platform: VirtualBox
+Memory: 4096 MB
+Network Adapter: Intel PRO/1000 MT Desktop (82540EM)
+
+Network Configuration:
+- Connected to Switch1
+- One Ethernet adapter
+- Uses IPv4 addressing
+- Provides network services to the Windows 10 client
+
+Configured Services:
+- DHCP
+- DNS
+- HTTP
+- TCP and UDP communication
+
+DHCP Function:
+The Ubuntu server provides automatic IP configuration to the client.
+The DHCP process includes Discover, Offer, Request, and Acknowledgment
+messages.
+
+DNS Function:
+The server provides hostname-to-IP-address resolution. DNS operation
+was tested from the Windows 10 client with nslookup.
+
+HTTP Function:
+A web service was hosted on the Ubuntu server and tested from the
+Windows 10 client using a web browser and the curl command.
+
+Verification Commands:
+ip addr
+ip route
+systemctl status isc-dhcp-server
+systemctl status bind9
+systemctl status nginx
+ss -tulpn
