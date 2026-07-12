@@ -1,0 +1,39 @@
+Device Name: Win10Client-1
+Operating System: Windows 10
+Virtualization Platform: VirtualBox
+Memory: 4096 MB
+Network Adapter: Intel PRO/1000 MT Desktop (82540EM)
+
+Network Configuration:
+- Connected to Switch1
+- One Ethernet adapter
+- IPv4 configuration obtained automatically through DHCP
+- Uses the configured DNS service
+- Uses NAT2 for access outside the local virtual network
+
+Tests Performed:
+- DHCP address assignment
+- DNS name resolution
+- ICMP connectivity
+- HTTP web access
+- TCP and UDP traffic capture
+- ARP address resolution
+
+Windows Verification Commands:
+ipconfig /all
+ipconfig /release
+ipconfig /renew
+arp -a
+nslookup google.com
+ping 8.8.8.8
+tracert 8.8.8.8
+curl http://<server-ip-address>
+
+Wireshark Display Filters:
+bootp
+dns
+arp
+icmp
+http
+tcp
+udp
