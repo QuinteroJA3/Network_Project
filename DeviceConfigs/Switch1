@@ -1,1 +1,22 @@
+Device Name: Switch1
+Device Type: GNS3 Ethernet Switch
 
+Port Configuration:
+Ethernet0 - Access Port - VLAN 1
+Ethernet1 - Access Port - VLAN 1
+Ethernet2 - Access Port - VLAN 1
+Ethernet3 - Access Port - VLAN 1
+Ethernet4 - Access Port - VLAN 1
+Ethernet5 - Access Port - VLAN 1
+Ethernet6 - Access Port - VLAN 1
+Ethernet7 - Access Port - VLAN 1
+
+Connected Devices:
+- Ubuntu_Server-1
+- Win10Client-1
+- NAT2
+
+Purpose:
+Switch1 provides Layer 2 connectivity between the Ubuntu server,
+Windows 10 client, and GNS3 NAT node. All active ports are assigned
+to the default VLAN, VLAN 1.
